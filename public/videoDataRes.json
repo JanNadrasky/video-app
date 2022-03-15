@@ -1,0 +1,16 @@
+{
+  "videoData":
+  {
+    "startEnd": [
+      {
+        "start": 0.2,
+        "end": 0.4
+      },
+      {
+        "start": 0.6,
+        "end": 0.8
+      }
+    ],
+    "path": "sample-mp4-file.mp4"
+  }
+}

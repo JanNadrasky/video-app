@@ -1,0 +1,115 @@
+/* Main Container */
+
+.app {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px;
+
+  /* Video */
+
+  .video {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Controls */
+  
+ .controlsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 40px;
+    z-index: 20;
+    max-width: 1000px;
+
+    &__controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      max-width: 1000px;
+      width: 100%;
+
+      &--controlsIcon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      &--controlsIcon--small {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  
+  
+  /* The time controls section */
+  
+  .timecontrols {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+
+    &__progressbarContainer {
+      max-width: 1000px;
+      background-color: gray;
+      border-radius: 15px;
+      width: 100%;
+      height: 20px;
+      z-index: 30;
+      position: relative;
+      margin: 0 20px;
+    
+      &--slider {
+        position: absolute;
+        width: 10px;
+        height: 60px;
+        top: -20px;
+        background: red;
+        cursor: pointer;
+        z-index: 1010;
+      }
+    
+      &__inOutPointsContainer {
+        position: absolute;
+        z-index: 100;
+      
+        &--controls {
+          position: absolute;
+          width: 50px;
+          top: 0;
+          height: 20px;
+          background: green;
+        }
+      }
+    }
+    
+    &__progressBar {
+      max-width: 1000px;
+      background-color: indigo;
+      height: 100%;
+      position: relative;
+      border-radius: 15px;
+    }
+  }
+}
+
+.icon-revert {
+  transform: rotate(180deg);
+}
+
+
