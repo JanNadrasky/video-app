@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { getVideoData } from './services/videoData';
-import "./App.scss";
+import "./VideoApp.scss";
 
 let loaded = false;
 let breakpointsPositions = [];
